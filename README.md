@@ -1,9 +1,9 @@
 <a ><img src="https://cdn.dribbble.com/users/976984/screenshots/2387423/telescope.gif" align="right" height="240"/></a>
 
-# Some-Useful-Python-Modules 🧨
+## Some-Useful-Python-Modules 🧨
 
 ## About :
-🔸 All the modules used in these jupyter notebooks are really helpful and can really save &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a lot of time making large projects.<br><br>
+🔸 All the modules used in these jupyter notebooks are really helpful and can really save a lot of time making large projects.<br><br>
 🔹 Would really like you to have a look at it !
 
 ## Jupyter Notebooks :
