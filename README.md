@@ -10,6 +10,7 @@
 1) &nbsp;&nbsp; Unzipping and Zipping Files.ipynb
 2) &nbsp;&nbsp; Collections module.ipynb
 3) &nbsp;&nbsp; Math and Random Modules.ipynb
+4) &nbsp;&nbsp; Opening and Reading Files.ipynb
 
 ## Modules & libraries used :
 ### 💨 *Unzipping and Zipping Files*
@@ -34,7 +35,7 @@ from collections import Counter
 ```
 
 
-# '''
+## '''
 
 ##### *Common patterns when using the Counter() object:*<br>
 
@@ -48,7 +49,7 @@ Counter(dict(list_of_pairs))&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs
 c.most_common()[:-n-1:-1]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# n least common elements<br>
 c += Counter()&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# remove zero and negative counts<br>
 
-# '''
+## '''
 ```python
 from collections import defaultdict
 ```
@@ -57,7 +58,7 @@ from collections import defaultdict
 from collections import namedtuple
 ```
 
-# '''
+## '''
 
 ##### *Using namedtuple :*
 The standard tuple uses numerical indexes to access its members. <br><br>
@@ -70,7 +71,7 @@ The standard tuple uses numerical indexes to access its members. <br><br>
    function. The arguments are the name of the new class and a string containing the names of the  
    elements.
    
-  # '''
+  ## '''
 
 ### 💨 *Useful Math Functions & Random Module*
 ```python
@@ -88,3 +89,31 @@ import random
 
 The random module is a built-in module to generate the pseudo-random variables. It can be used perform some action randomly such as to get a random number, selecting a random elements from a list, shuffle elements randomly, etc.
 
+### 💨 *Opening and Reading Files*
+##### *Getting Directories*
+```python
+import os
+```
+
+##### *Moving Files*
+```python
+import shutil
+```
+##### *Deleting Files*
+```python
+import send2trash
+```
+
+## '''
+NOTE: The os module provides 3 methods for deleting files:<br>
+
+->  os.unlink(path) which deletes a file at the path your provide !<br>
+->  os.rmdir(path) which deletes a folder (folder must be empty) at the path your provide !<br>
+->  shutil.rmtree(path) this is the most dangerous, as it will remove all files and folders 
+    contained in the path. All of these methods can not be reversed! Which means if you make 
+    a mistake you won't be able to recover the file. <br>
+   
+->  Instead using the send2trash module is a safer alternative that sends deleted files to the 
+    trash bin instead of permanent removal.
+    
+## '''
