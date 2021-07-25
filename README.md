@@ -9,6 +9,7 @@
 ## Jupyter Notebooks :
 1) &nbsp;&nbsp; Unzipping and Zipping Files.ipynb
 2) &nbsp;&nbsp; Collections module.ipynb
+3) &nbsp;&nbsp; Math and Random Modules.ipynb
 
 ## Modules & libraries used :
 ### 💨 *Unzipping and Zipping Files*
@@ -70,3 +71,20 @@ The standard tuple uses numerical indexes to access its members. <br><br>
    elements.
    
   # '''
+
+### 💨 *Useful Math Functions & Random Module*
+```python
+import math
+```
+##### *Using math Library :*
+
+The Python Math Library provides us access to some common math functions and constants in Python, which we can use throughout our code for more complex mathematical computations. The library is a built-in Python module, therefore you don't have to do any installation to use it.<br>
+
+```python
+import random
+```
+##### *Using Random Module :*
+
+
+The random module is a built-in module to generate the pseudo-random variables. It can be used perform some action randomly such as to get a random number, selecting a random elements from a list, shuffle elements randomly, etc.
+
