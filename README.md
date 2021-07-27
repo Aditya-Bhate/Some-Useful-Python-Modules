@@ -12,6 +12,7 @@
 3) &nbsp;&nbsp; Math and Random Modules.ipynb
 4) &nbsp;&nbsp; Opening and Reading Files.ipynb
 5) &nbsp;&nbsp; Overview of Regular Expressions.ipynb
+6) &nbsp;&nbsp; Python Debugger.ipynb
 
 ## Modules & libraries used :
 ### 💨 *Unzipping and Zipping Files*
@@ -140,3 +141,43 @@ import re
 📌 **re.findall** returns all non-overlapping matches of pattern in string, as a list of strings. The string is scanned left-to-right, and matches are returned in the order found. <br><br>
  📌 **re.compile** combines a regular expression pattern into pattern objects, which can be used for pattern matching. It also helps to search a pattern again without rewriting it.
 ##   '''
+
+### 💨 *Python Debugger*
+```python
+import pdb
+```
+The Python debugger provides a debugging environment for Python programs. It supports setting conditional breakpoints, stepping through the source code one line at a time, stack inspection, and more.<br><br>
+Kindly have a look at [Official Docs](https://docs.python.org/3/library/pdb.html) 😀!
+
+### 💨 *Timing your code*
+## '''
+ Sometimes it's important to know how long your code is taking to run, or at least know if a
+    particular line of code is slowing down your entire project. Python has a built-in timing module
+    to do this.
+##   '''
+
+
+   
+    
+
+
+##### *Timing Start and Stop*
+```python
+import time
+```
+Try using the time module to simply calculate the elapsed time for the code. <br>
+Due to the time module's precision, the code needs to take at least 0.1 seconds 
+to complete.
+
+##### *Timeit Module*
+
+```python
+import timeit
+```
+What if we have two blocks of code that are quite fast, the difference from the time.time() method 
+may not be enough to tell which is fater. In this case, we can use the timeit module.<br>
+
+The timeit module takes in two strings, a statement (stmt) and a setup. It then runs the setup code 
+and runs the stmt code some n number of times and reports back average length of time it took.
+
+
