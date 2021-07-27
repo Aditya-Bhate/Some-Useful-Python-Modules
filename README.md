@@ -13,6 +13,8 @@
 4) &nbsp;&nbsp; Opening and Reading Files.ipynb
 5) &nbsp;&nbsp; Overview of Regular Expressions.ipynb
 6) &nbsp;&nbsp; Python Debugger.ipynb
+7) &nbsp;&nbsp; Timing your code.ipynb
+8) &nbsp;&nbsp; datetime module.ipynb
 
 ## Modules & libraries used :
 ### 💨 *Unzipping and Zipping Files*
@@ -156,11 +158,6 @@ Kindly have a look at [Official Docs](https://docs.python.org/3/library/pdb.html
     to do this.
 ##   '''
 
-
-   
-    
-
-
 ##### *Timing Start and Stop*
 ```python
 import time
@@ -180,4 +177,30 @@ may not be enough to tell which is fater. In this case, we can use the timeit mo
 The timeit module takes in two strings, a statement (stmt) and a setup. It then runs the setup code 
 and runs the stmt code some n number of times and reports back average length of time it took.
 
+### 💨 *datetime module*
 
+##### *time*
+```python
+import datetime
+
+t = datetime.time(4, 20, 1)
+```
+A time instance only holds values of time, and not a date associated with the time.
+
+##### *Both date  and time*
+```python
+from datetime import datetime
+```
+<br>
+
+📣  Feel free to have a look at all the files in this repository !🤗
+
+<a ><img src="https://www.tubebuddy.com/content/site2/img/buddy-waving.gif" align="right" height="150"/></a>
+#
+
+
+### Languages used :
+<code><img height="40" src="https://img.icons8.com/color/48/000000/python--v1.png"/></code>
+
+#
+❎ In case you find issues in any of my Repositories, you can Hit Me Up [here](https://github.com/Aditya-Bhate/Aditya-Bhate/issues)! 👈
