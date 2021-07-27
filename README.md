@@ -11,6 +11,7 @@
 2) &nbsp;&nbsp; Collections module.ipynb
 3) &nbsp;&nbsp; Math and Random Modules.ipynb
 4) &nbsp;&nbsp; Opening and Reading Files.ipynb
+5) &nbsp;&nbsp; Overview of Regular Expressions.ipynb
 
 ## Modules & libraries used :
 ### 💨 *Unzipping and Zipping Files*
@@ -117,3 +118,25 @@ NOTE: The os module provides 3 methods for deleting files:<br>
     trash bin instead of permanent removal.
     
 ## '''
+### 💨 *Regular Expressions ---> #re.search #re.findall #re.compile*
+
+## '''
+Regular Expressions (sometimes called regex for short) allows a user to search for strings 
+   using almost any sort of rule they can come up. For example, finding all capital letters in a 
+   string, or finding a phone number in a document.
+
+   Regular expressions are notorious for their seemingly strange syntax. This strange syntax is a
+   byproduct of their flexibility. Regular expressions have to be able to filter out any string 
+   pattern you can imagine, which is why they have a complex string pattern format.
+  ##  '''
+  
+  ```python
+import re
+```
+## '''
+📌 **re.search()** will take the pattern, scan the text, and then returns a Match object.<br>
+   If no pattern is found, a None is returned (in Jupyter Notebook this just means that 
+   nothing is output below the cell).<br><br>
+📌 **re.findall** returns all non-overlapping matches of pattern in string, as a list of strings. The string is scanned left-to-right, and matches are returned in the order found. <br><br>
+ 📌 **re.compile** combines a regular expression pattern into pattern objects, which can be used for pattern matching. It also helps to search a pattern again without rewriting it.
+##   '''
